@@ -11,7 +11,10 @@ import InputAdornment from "@mui/material/InputAdornment";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 
+import { useGlobalState } from "../store";
+
 function LoginCard() {
+  const [, setPage] = useGlobalState("page");
   const [showPassword, setShowPassword] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -89,7 +92,12 @@ function LoginCard() {
               >
                 Forgot Username or Password?
               </Link>
-              <Button variant="contained" color="primary" fullWidth>
+              <Button
+                variant="contained"
+                color="primary"
+                fullWidth
+                onClick={() => setPage("form")}
+              >
                 Login
               </Button>
             </form>
