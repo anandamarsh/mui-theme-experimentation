@@ -43,7 +43,11 @@ function LoginCard() {
         <Card sx={{ padding: "1rem", maxWidth: "350px", width: "100%" }}>
           <CardContent>
             <Box display="flex" justifyContent="center">
-              <img src="logo.png" alt="Logo" style={{ marginTop: "1rem" }} />
+              <img
+                src="zoopa.png"
+                alt="Logo"
+                style={{ marginTop: "1rem", width: "100px" }}
+              />
             </Box>
             <Typography
               display="flex"
