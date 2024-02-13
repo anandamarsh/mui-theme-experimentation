@@ -9,7 +9,7 @@ import { useGlobalState } from "./store";
 
 function App() {
   const [page] = useGlobalState("page");
-  const [theme, setTheme] = useState(noTheme);
+  const [theme, setTheme] = useState(clarityTheme);
 
   const toggleTheme = () => {
     setTheme(theme === clarityTheme ? noTheme : clarityTheme);
@@ -17,9 +17,9 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Box sx={{ position: "fixed", bottom: 16, right: 16 }}>
+      <Box sx={{ position: "fixed", bottom: "0.5rem", right: 0 }}>
         <FormControlLabel
-          control={<Switch onChange={toggleTheme} />}
+          control={<Switch onChange={toggleTheme} defaultChecked />}
           label=""
         />
       </Box>
