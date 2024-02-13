@@ -9,4 +9,4 @@ Note that your changes will get saved autometically in a new branch. Once you ar
 
 All possible options for _horizontal themeing_ can be found at [MUI Default theme viewer](https://mui.com/material-ui/customization/default-theme/).
 
-For _vertical theming_, you need to edit `.components` object in `theme.js`. This will be discussed as we pick individual components and eplore the options MUI provides to us
+For _vertical theming_, you need to edit `.components` object in `theme.js`. This will be discussed as we pick individual components and explore the options MUI provides to us
