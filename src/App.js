@@ -17,12 +17,11 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Box sx={{ position: "fixed", bottom: "0.5rem", right: 0 }}>
-        <FormControlLabel
-          control={<Switch onChange={toggleTheme} defaultChecked />}
-          label=""
-        />
-      </Box>
+      <FormControlLabel
+        control={<Switch onChange={toggleTheme} defaultChecked />}
+        label=""
+        sx={{ position: "fixed", bottom: "0.5rem", right: 0, zIndex: 1000 }}
+      />
       {page !== "login" && <AppBar />}
       {page === "login" && <Login />}
       {page === "form" && <Form />}
