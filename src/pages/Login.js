@@ -35,9 +35,7 @@ function LoginCard() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          backgroundImage: "url(background.png)",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+          background: "linear-gradient(to bottom, pink, white)",
         }}
       >
         <Card sx={{ padding: "1rem", maxWidth: "350px", width: "100%" }}>
