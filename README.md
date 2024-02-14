@@ -1,6 +1,4 @@
-#### To edit code, you need to have a [Github](https://github.com/) account. You must use this account to sign-in to your code-sandbox
-
-## How to change the theme
+#### To edit themes, you need to have a [Github](https://github.com/) account. You must use this account to sign-in to your code-sandbox
 
 ### Horizontal theming
 
@@ -13,4 +11,6 @@ Note that your changes will get saved autometically in a new branch. Once you ar
 
 ### Vertical theming
 
-Much like _horizontal theming_, except that you may need to create `json` files foe each component. The name of these files are defined in MUI Docs, so you may need to ask a MUI Developer to create a file for you. As an example, to customise a button, we need a file called `MUIButton.json`. All configurable properties are documented at [CSS Classes for Button API](https://mui.com/material-ui/api/button/) under the column `Rule name` (make sure that you select _Table view_ while you are viewing this list). As you create new new `json`s, you need to add them to `~/src/theme/vertical/index.js`
+Much like _horizontal theming_, except that you may need to create `json` files for each component. The name of these files are defined in MUI Docs, so you may need to ask a MUI Developer to create a `json` file for you with the corrct name.
+
+As an example, to customise a button, we need a file called `MUIButton.json`. All configurable properties are documented at [CSS Classes for Button API](https://mui.com/material-ui/api/button/) under the column `Rule name` (make sure that you select _Table view_ while you are viewing this list). As you create new new `json`s, you need to add them to `~/src/theme/vertical/index.js`
