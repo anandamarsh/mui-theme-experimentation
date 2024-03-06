@@ -3,7 +3,7 @@ import AppBar from "./components/AppBar";
 import Login from "./pages/Login";
 import Form from "./pages/Form";
 import "./App.css";
-import { ThemeProvider, Switch, FormControlLabel, Box } from "@mui/material";
+import { ThemeProvider, Switch, FormControlLabel } from "@mui/material";
 import { clarityTheme, noTheme } from "./theme";
 import { useGlobalState } from "./store";
 
